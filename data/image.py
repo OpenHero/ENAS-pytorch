@@ -17,7 +17,7 @@ class Image(object):
                 transforms.RandomCrop(32, padding=4),
                 transforms.RandomHorizontalFlip(),
                 transforms.ToTensor(),
-                normalize,
+               normalize,
             ])
         elif args.dataset == 'MNIST':
             Dataset = datasets.MNIST
